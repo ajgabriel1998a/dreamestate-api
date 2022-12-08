@@ -25,7 +25,7 @@ namespace CapstoneAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<JoinOurTeam>>> AddContact(JoinOurTeam join)
+        public async Task<ActionResult<List<JoinOurTeam>>> AddJoinOurTeam(JoinOurTeam join)
         {
             context.JoinOurTeam.Add(join);
             await context.SaveChangesAsync();

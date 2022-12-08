@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CapstoneAPI.Models;
-
+using Microsoft.AspNetCore.Cors;
 
 namespace CapstoneAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [EnableCors("CORSPolicy")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class ContactUsController : ControllerBase
     {
